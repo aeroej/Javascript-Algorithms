@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(s){  
+                let res = '';
+                for (let x of s) {
+                    if (x === x.toUpperCase()){
+                        res += x.toLowerCase()
+                    }
+                    else if (x === x.toLowerCase()){
+                        res += x.toUpperCase()
+                    }
+                }
+                return res
+            }
+
+            console.log(solution("StuDY"));
+        </script>
+    </body>
+</html>

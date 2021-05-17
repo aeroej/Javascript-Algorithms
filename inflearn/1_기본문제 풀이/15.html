@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(s){  
+                let res = '';
+                if (s.length%2 === 1){
+                    res = s[Math.ceil(s.length/2) -1]
+                }
+                else if (s.length%2 === 0){
+                    res = s[s.length/2 -1] + s[s.length/2]
+                }
+                return res
+            }
+            console.log(solution("study"));
+        </script>
+    </body>
+</html>

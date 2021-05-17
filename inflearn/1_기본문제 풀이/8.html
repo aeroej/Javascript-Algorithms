@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            // 1. 모든 난쟁이 키의 합을 구한다. 2. 많은만큼 뺀다.
+            function solution(arr){
+                let sum = 0;
+                for (let x of arr) {
+                    sum += x;
+                }
+                // 무조건 i 뒤에 j가 온다. 따라서 j 먼저 제거해주면 된다.
+                let minus = sum - 100;
+                for (let i=0; i<arr.length; i++) {
+                    for (let j=i+1; j<arr.length; j++){
+                        if (i !== j && arr[i] + arr[j] === minus) {
+                            arr.splice(j, 1);
+                            arr.splice(i, 1);
+                            return arr
+                        }
+                    }
+                }
+            }
+            
+            let arr=[20, 7, 23, 19, 10, 15, 25, 8, 13];
+            console.log(solution(arr));
+        </script>
+    </body>
+</html>
