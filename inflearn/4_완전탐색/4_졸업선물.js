@@ -1,11 +1,12 @@
-// 하나하나 할인받았다고 가정할 것
+// 하나하나 할인받았다고 가정할 것 *모든 경우의 수*
 // arr.sort((a, b) => a - b) 오름차순 정렬
 // arr.sort((a, b) => b - a) 내림차순 정렬
+
 function solution(m, product){
     let answer = 0;
     product = product.sort((a, b) => (a[0]+a[1]) - (b[0]+b[1]));
     for (let i=0; i<product.length; i++) {
-        cost = product[i][0]/2 + product[i][1];
+        cost = product[i][0]/2 + product[i][1]; // 할인
         let cnt = 1;
         for (let j=0; j<product.length; j++) {
             if (j === i) continue;
