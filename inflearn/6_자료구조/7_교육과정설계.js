@@ -1,8 +1,9 @@
 function solution(need, plan){
-    let queue = [];
-    for (let x of need) {
-        queue.push(x);
-    }
+    // let queue = [];
+    // for (let x of need) {
+    //     queue.push(x);
+    // }
+    let queue = need.split('');
     for (let x of plan) {
         if (x === queue[0]) queue.shift()
     }
