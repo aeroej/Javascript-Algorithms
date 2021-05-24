@@ -1,64 +1,53 @@
 // 처음에 푼 게 맞았는데,
 // arr.slice()를 안해준 것이 문제였다.
 // Javascript에서 배열 깊은 복사는 필수닷 
-// 모든 부분집합을 출력하는 데에는 성공했으나, 출력예제와 같은 순서로 출력하지 못했다. 
-
-// function solution(n){
-//     function DFS(n, arr) {
-//         if (n <= 0) return ;
-//         else {
-//             let set = arr.slice()
-//             DFS(n-1, set)
-//             set.unshift(n);
-//             DFS(n-1, set)
-//             console.log(set);
-//         }
-//     }
-
-//     DFS(3, []);
-//     return "solution";
-// }
-
-// console.log(solution(3));
-
-
-// 출력순서도 맞췄다 !!!!!!
-// function solution(n){
-//     function DFS(v, arr) {
-//         if (v > n) return ;
-//         else {
-//             let set1 = arr.slice(); // v가 있는 부분집합
-//             let set2 = arr.slice(); // v가 없는 부분집합
-//             set1.push(v);
-//             DFS(v+1, set1);
-//             console.log(set1.join(' '));
-//             DFS(v+1, set2);
-//         }
-//     }
-//     DFS(1, []);
-// }
-
-// solution(3);
-
-
+//출력순서 맞췄다 !!!!!!
+/*
 function solution(n){
-    let ch=Array.from({length:n+1}, ()=>0);
-    function DFS(L){
-        if(L===n+1){
-            let tmp="";
-            for(let i=1; i<=n; i++){
-                if(ch[i]===1) tmp+=(i+" ");
-            }
-            if(tmp.length>0) console.log(tmp);
+    function DFS(v, arr) {
+        if (v > n) return ;
+        else {
+            let set1 = arr.slice(); // v가 있는 부분집합
+            let set2 = arr.slice(); // v가 없는 부분집합
+            set1.push(v);
+            DFS(v+1, set1);
+            console.log(set1.join(' '));
+            DFS(v+1, set2);
         }
-        else{
-            ch[L]=1;
-            DFS(L+1);
-            ch[L]=0;
-            DFS(L+1);
+    }
+    DFS(1, []);
+}
+
+solution(3);
+*/
+
+
+// DFS에 배열을 보내지 않기
+// DFS(1이 있다) --> console.log --> DFS(1이 없다)
+// 1이 있다부터 시작하므로 초기값은 DFS(1)로 시작한다.
+// return 조건은 n을 넘어가는 순간이다.
+function solution(n) {
+    let result = [];
+    function DFS(v) {
+        if (v > n) {
+            if (result.length !== 0) console.log(result.join(' '));
+            return ;
+        }
+        else {
+            result.push(v);
+            DFS(v+1);
+            result.pop();
+            DFS(v+1);
         }
     }
     DFS(1);
 }
 
 solution(3);
+
+
+/*
+1. 매개변수 DFS(초기값)
+2. return 조건
+3. 출력은 if에서
+*/

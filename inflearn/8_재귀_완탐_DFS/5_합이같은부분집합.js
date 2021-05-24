@@ -4,6 +4,7 @@
 // set 두개 --> else --> set1에 있다 or set2에 있다
 // if set1.length + set2.length === 전체 length --> set1.reduce() === set2.reduce() --> return "YES" 
 // default return "NO"
+/*
 function solution(arr){
     let result = "NO";
     function DFS(v, arr1, arr2) {
@@ -28,7 +29,34 @@ function solution(arr){
 
 let arr=[1, 3, 5, 6, 7, 10];
 console.log(solution(arr));
+*/
 
 
 // DFS() 매개변수로 array를 보내지 않기
 // DFS(index, sum)
+// 합이 같은 부분집합
+// 초기값은 무엇을 할 것인가? --> index
+// 언제 return할 것인가? --> YES인 경우를 찾았을 때
+// 언제 출력할 것인가 ?
+function solution(arr) {
+    let total = arr.reduce((a, b) => a+b, 0);
+    let result = "NO", flag = false;
+    function DFS(v, sum) {
+        if (flag === true) return;
+        else if (v > arr.length) {
+            if (total-sum === sum) {
+                result = "YES";
+                flag = true;
+            }
+        }
+        else {
+            DFS(v+1, sum);
+            DFS(v+1, sum+arr[v]);
+        }
+    }
+    DFS(0, 0);
+    return result;
+}
+
+let arr = [1, 3, 5, 6, 7, 10];
+console.log(solution(arr));
