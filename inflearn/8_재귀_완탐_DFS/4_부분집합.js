@@ -23,19 +23,42 @@
 
 
 // 출력순서도 맞췄다 !!!!!!
+// function solution(n){
+//     function DFS(v, arr) {
+//         if (v > n) return ;
+//         else {
+//             let set1 = arr.slice(); // v가 있는 부분집합
+//             let set2 = arr.slice(); // v가 없는 부분집합
+//             set1.push(v);
+//             DFS(v+1, set1);
+//             console.log(set1.join(' '));
+//             DFS(v+1, set2);
+//         }
+//     }
+//     DFS(1, []);
+// }
+
+// solution(3);
+
+
 function solution(n){
-    function DFS(v, arr) {
-        if (v > n) return ;
-        else {
-            let set1 = arr.slice(); // v가 있는 부분집합
-            let set2 = arr.slice(); // v가 없는 부분집합
-            set1.push(v);
-            DFS(v+1, set1);
-            console.log(set1.join(' '));
-            DFS(v+1, set2);
+    let ch=Array.from({length:n+1}, ()=>0);
+    function DFS(L){
+        if(L===n+1){
+            let tmp="";
+            for(let i=1; i<=n; i++){
+                if(ch[i]===1) tmp+=(i+" ");
+            }
+            if(tmp.length>0) console.log(tmp);
+        }
+        else{
+            ch[L]=1;
+            DFS(L+1);
+            ch[L]=0;
+            DFS(L+1);
         }
     }
-    DFS(1, []);
+    DFS(1);
 }
 
 solution(3);

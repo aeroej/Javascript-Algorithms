@@ -17,3 +17,7 @@ function solution(c, arr){
 
 let arr=[81, 58, 42, 33, 61];
 console.log(solution(259, arr));
+
+
+// DFS() 매개변수로 array를 보내지 않기
+// DFS(index, sum)

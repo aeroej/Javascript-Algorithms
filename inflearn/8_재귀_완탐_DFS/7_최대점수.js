@@ -27,3 +27,7 @@ function solution(m, ps, pt) {
 let ps=[10, 25, 15, 6, 7]; // 문제
 let pt=[5, 12, 8, 3, 4]; // 시간
 console.log(solution(20, ps, pt));
+
+
+// DFS() 매개변수로 array를 보내지 않기
+// DFS(index, sum, time)
