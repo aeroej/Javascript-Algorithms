@@ -15,12 +15,25 @@ nCr = n-1Cr-1 + n-1Cr --> 4!/2!2! + 4!/1!3! --> 6+4
 818809200
 */
 
+/*
+5,3 -> 4,2 4,3 -> 3,1 3,2 4,3 -> 3+3+4
+r이 1 또는 n-r = 1인 경우 답은 n이 된다.
+DFS(v, m) --> DFS(v-1, m-1) + DFS(v-1, m)
+*/
 function solution(n, r){   
-    function DFS(v) {
-
+    let result = 0;
+    function DFS(v, m) {
+        if (m === 1 || v-m === 1) {
+            result += v;
+            return ;
+        }
+        else {
+            DFS(v-1, m-1);
+            DFS(v-1, m);
+        }
     }
-    DFS();
-    return "solution";
+    DFS(n, r);
+    return result;
 }
 
 console.log(solution(5, 3));
