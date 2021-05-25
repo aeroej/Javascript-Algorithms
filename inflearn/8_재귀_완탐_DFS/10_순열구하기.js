@@ -21,22 +21,25 @@
 
 function solution(m, arr){   
     let result = [];
-    function DFS(v, x) {
-        if (result.length === m) {
-            // console.log(result);
+    let cnt = 0;
+    function DFS(v) {
+        if (result.length === m) { // v > m 가능 --> v가 1일 때 첫번째로 고르고, v가 2일 때 두번째로 고르고, v가 2를 초과했을 때 출력
+            cnt++;
+            console.log(result.join(' '));
             return;
         }
         else {
-            if (!result.includes(arr[v])) result.push(arr[v]);
-            DFS(v+1);
-            DFS(v+1)
-            console.log(result)
-            result.pop();
-            result.push(arr[v+1])
+            for (let i=0; i<arr.length; i++) {
+                if (!result.includes(arr[i])) {
+                    result.push(arr[i]);
+                    DFS(v+1);
+                    result.pop();
+                }
+            }
         }
     }
-    DFS(0); // 추가할 인덱스
-    return "solution" ;
+    DFS(1); // 인덱스x, 뽑는 횟수 m
+    return cnt;
 }
 
 // 3 6, 3 9, 6 3, 6 9, ... --> 자기자신 중복 ㄴㄴ
