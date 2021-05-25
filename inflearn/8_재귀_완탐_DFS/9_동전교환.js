@@ -15,7 +15,6 @@
 // 5, 5, 5
 // 완탐인듯
 
-// 
 function solution(m, arr){
     let cnt = 0;
     let result = Number.MAX_SAFE_INTEGER;
