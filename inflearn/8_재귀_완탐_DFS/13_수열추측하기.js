@@ -21,13 +21,40 @@ N과 가장 밑에 있는 숫자가 주어져 있을 때 가장 윗줄에 있는
 */
 
 // 모든 경우의 수열을 구한다 --> 파스칼 계산을 한다
+
+
+
 function solution(n, f){    
+  let result = [], flag = false;
   let array = [];
+  function pascal(set) {
+    // 첫번째와 두번째 원소를 더하여 배열에 넣기 --> i<arr.length-1, arr[i]+arr[i+1]
+    // 위의 과정을 arr.length가 1이 될 때까지 반복
+    // 최종값을 return
+    let arr = set.slice(); // 깊은복사
+    while(true) {
+      let n = arr.length;
+      if (n === 1) {
+        if (arr[0] === f) {
+          result = set.slice();
+          flag = true;
+          return;
+        }
+        break;
+      }
+      for (let i=0; i<n-1; i++) {
+        let element = arr[i] + arr[i+1];
+        arr.push(element);
+      }
+      for (let i=0; i<n; i++) {
+        arr.shift();
+      }
+    }
+  }
   function DFS(v) {
+    if (flag === true) return;
     if (v > n) {
-      console.log(array);
-      // 파스칼연산하면 된다. 함수 만들기
-      
+      pascal(array);
       return;
     }
     else {
@@ -41,7 +68,7 @@ function solution(n, f){
     }
   }
   DFS(1);
-  return "solution";
+  return result.join(' ');
 }
 
 console.log(solution(4, 16));
