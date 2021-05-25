@@ -20,8 +20,28 @@ N과 가장 밑에 있는 숫자가 주어져 있을 때 가장 윗줄에 있는
 3 1 2 4
 */
 
-function solution(n, f){        
+// 모든 경우의 수열을 구한다 --> 파스칼 계산을 한다
+function solution(n, f){    
+  let array = [];
+  function DFS(v) {
+    if (v > n) {
+      console.log(array);
+      // 파스칼연산하면 된다. 함수 만들기
+      
+      return;
+    }
+    else {
+      for (let i=1; i<=n; i++) {
+        if (!array.includes(i)) {
+          array.push(i);
+          DFS(v+1);
+          array.pop();
+        }
+      }
+    }
+  }
+  DFS(1);
+  return "solution";
 }
-
 
 console.log(solution(4, 16));
