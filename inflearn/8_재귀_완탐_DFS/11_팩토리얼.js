@@ -12,6 +12,7 @@ N! = n*(n-1)*(n-2)*.....*2*1입니다.
 120
 */
 
+
 function solution(n){      
     let result = 1;
     function DFS(v){
