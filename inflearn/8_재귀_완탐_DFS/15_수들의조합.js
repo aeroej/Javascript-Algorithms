@@ -18,7 +18,21 @@ N개의 정수가 주어지면 그 숫자들 중 K개를 뽑는 조합의 합이
 2
 */
 
-function solution(n, k, arr, m){         
+function solution(n, k, arr, m){  // arr.length, 3개뽑겠다, arr, 6의배수
+  let cnt = 0;
+  let ch = Array.from({length:arr.length}, () => 0); // 배열사용유무
+  let tmp = Array.from({length:k}, () => 0); // 배열보관
+  function DFS(v, sum) {
+    if (v === k) { // v가 0일 때 첫번째 뽑음, 1일 때 두번째, 2일때 3번째, 3이 되는 순간 출력
+      if (sum%6 === 0) cnt++;
+      console.log(tmp, cnt);
+      return;
+    }
+    else { // arr
+    }
+  }
+  DFS(0, 0);
+  return "solution";
 }
 
 let arr=[2, 4, 5, 8, 12];
