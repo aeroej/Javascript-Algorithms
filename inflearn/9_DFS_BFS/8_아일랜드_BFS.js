@@ -8,20 +8,18 @@ function solution(board) {
   for (let i = 0; i < board.length; i++) {
     for (let j = 0; j < board.length; j++) {
       if (board[i][j] === 1) {
-        queue.push([i, j]);
+        board[i][j] = -1;
         cnt++;
-      }
-      while (queue.length > 0) {
-        let [x, y] = queue.shift();
-        if (board[x][y] === 1) { // 0,0
-          board[x][y] = -1;
-          for (let i = 0; i < 8; i++) {
-            let nx = x + dx[i];
-            let ny = y + dy[i];
+        queue.push([i, j]);
+        while (queue.length > 0) {
+          let [x, y] = queue.shift();
+          for (let k = 0; k < 8; k++) {
+            let nx = x + dx[k];
+            let ny = y + dy[k];
             if (nx >= 0 && nx < board.length && ny >= 0 && ny < board.length) {
               if (board[nx][ny] === 1) {
                 board[nx][ny] = -1;
-                queue.push([nx, ny])
+                queue.push([nx, ny]);
                 board[nx][ny] = 1;
               }
             }
