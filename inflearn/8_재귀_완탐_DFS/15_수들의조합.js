@@ -18,22 +18,41 @@ N개의 정수가 주어지면 그 숫자들 중 K개를 뽑는 조합의 합이
 2
 */
 
-function solution(n, k, arr, m){  // arr.length, 3개뽑겠다, arr, 6의배수
+/*
+// 일단 그냥 옛날방식으로 풀었음. (4_부분집합)넣을까 말까의 모든 경우를 구해서 배열길이가 3이면 리턴함,,,
+function solution(n, k, arr, m){ 
   let cnt = 0;
-  let ch = Array.from({length:arr.length}, () => 0); // 배열사용유무
-  let tmp = Array.from({length:k}, () => 0); // 배열보관
-  function DFS(v, sum) {
-    if (v === k) { // v가 0일 때 첫번째 뽑음, 1일 때 두번째, 2일때 3번째, 3이 되는 순간 출력
-      if (sum%6 === 0) cnt++;
-      console.log(tmp, cnt);
-      return;
+  function DFS(v, tmp) {
+    if (v === n) {
+      if (tmp.length === k) {
+        let sum = tmp.reduce((a, b) => a+b, 0);
+        if (sum%6 === 0) cnt++;
+      }
+      return ;
     }
-    else { // arr
+    else {
+      let set = tmp.slice();
+      set.push(arr[v]);
+      DFS(v+1, set); // arr[v] 넣는다
+      set.pop(); // arr[v] 안넣는다
+      DFS(v+1, set);
     }
   }
-  DFS(0, 0);
-  return "solution";
+  DFS(0, []); // 인덱스
+  return cnt;
 }
 
-let arr=[2, 4, 5, 8, 12];
+// 4+8+12 2+4+12
+let arr=[2, 4, 5, 8, 12]; 
+console.log(solution(5, 3, arr, 6));
+*/
+
+// 배열 매개변수 없이 다시 풀어보기
+function solution(n, k, arr, m) {
+  let cnt = 0;
+  let tmp = 
+}
+
+
+let arr = [2, 4, 5, 8, 12];
 console.log(solution(5, 3, arr, 6));
