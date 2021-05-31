@@ -10,3 +10,7 @@ num	return
 3	"Odd"
 4	"Even"
 */
+
+function solution(num) {
+    return num%2 ? "Even" : "Odd";
+}

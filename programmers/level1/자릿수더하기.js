@@ -16,3 +16,22 @@ N	answer
 입출력 예 #2
 9 + 8 + 7 = 24이므로 24를 return 하면 됩니다.
 */
+
+/* 숫자풀이
+function solution(n) {
+    let sum = 0;
+    while(n>0) {
+        sum += n%10;
+        n = Math.floor(n/10);
+    }
+    return sum;
+}
+*/
+
+// 문자풀이
+function solution(n) {
+    // return String(n).split('').reduce((a, b) => a + Number(b), 0);
+    return (n+"").split("").reduce((acc, curr) => acc + parseInt(curr), 0);
+}
+
+console.log(solution(987))
