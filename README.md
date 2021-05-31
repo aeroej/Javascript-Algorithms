@@ -9,7 +9,7 @@
 <br>
 <br>
 <br>  
-## 2. 프로그래머스 코딩테스트 연습  
+### 2. 프로그래머스 코딩테스트 연습  
 [프로그래머스 코딩 테스트 연습](https://programmers.co.kr/learn/challenges) 풀이입니다.  
 <br>
 <br>  
