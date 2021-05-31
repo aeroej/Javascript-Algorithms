@@ -22,3 +22,11 @@
 |[평균 구하기](https://programmers.co.kr/learn/courses/30/lessons/12944)|[Javascript](https://github.com/aeroej/Javascript-Algorithms/blob/main/programmers/level1/%ED%8F%89%EA%B7%A0%EA%B5%AC%ED%95%98%EA%B8%B0.js)|
 |[콜라츠 추측](https://programmers.co.kr/learn/courses/30/lessons/12943)|[Javascript](https://github.com/aeroej/Javascript-Algorithms/blob/main/programmers/level1/%EC%BD%9C%EB%9D%BC%EC%B8%A0%EC%B6%94%EC%B8%A1.js)|
 |[최대공약수와 최소공배수](https://programmers.co.kr/learn/courses/30/lessons/12940)|[Javascript](https://github.com/aeroej/Javascript-Algorithms/blob/main/programmers/level1/%EC%B5%9C%EB%8C%80%EA%B3%B5%EC%95%BD%EC%88%98%EC%99%80%EC%B5%9C%EC%86%8C%EA%B3%B5%EB%B0%B0%EC%88%98.js)|
+|[짝수와 홀수](https://programmers.co.kr/learn/courses/30/lessons/12937)|[Javascript]()|
+|[제일 작은 수 제거하기](https://programmers.co.kr/learn/courses/30/lessons/12935)|[Javascript]()|
+|[정수 제곱근 판별](https://programmers.co.kr/learn/courses/30/lessons/12934)|[Javascript]()|
+|[정수 내림차순으로 배치하기](https://programmers.co.kr/learn/courses/30/lessons/12933)|[Javascript]()|
+|[자연수 뒤집어 배열로 만들기](https://programmers.co.kr/learn/courses/30/lessons/12932)|[Javascript]()|
+|[자릿수 더하기](https://programmers.co.kr/learn/courses/30/lessons/12931)|[Javascript]()|
+|[이상한 문자 만들기](https://programmers.co.kr/learn/courses/30/lessons/12930)|[Javascript]()|
+|[약수의 합](https://programmers.co.kr/learn/courses/30/lessons/12928)|[Javascript]()|
