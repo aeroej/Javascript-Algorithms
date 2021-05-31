@@ -4,16 +4,15 @@
 <br>
 <br>
 <br>  
-## 1. 자바스크립트 알고리즘 문제풀이(코딩테스트 대비)  
+# 1. 자바스크립트 알고리즘 문제풀이(코딩테스트 대비)  
 인프런 "[자바스크립트 알고리즘 문제풀이](https://www.inflearn.com/course/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4/dashboard)" 강의 실습입니다.  
 <br>
 <br>
 <br>  
-### 2. 프로그래머스 코딩테스트 연습  
+# 2. 프로그래머스 코딩테스트 연습  
 [프로그래머스 코딩 테스트 연습](https://programmers.co.kr/learn/challenges) 풀이입니다.  
-<br>
 <br>  
-### Level1  
+## Level1  
 |문제|코드|
 |:---:|:---:|
 |[직사각형 별찍기](https://programmers.co.kr/learn/courses/30/lessons/12969)|[Javascript](https://github.com/aeroej/Javascript-Algorithms/blob/main/programmers/level1/%EC%A7%81%EC%82%AC%EA%B0%81%ED%98%95%EB%B3%84%EC%B0%8D%EA%B8%B0.js)|
