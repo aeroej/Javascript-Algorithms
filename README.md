@@ -15,10 +15,10 @@
 |문제|코드|
 |:---:|:---:|
 |[직사각형 별찍기](https://programmers.co.kr/learn/courses/30/lessons/12969)|[Javascript](https://github.com/aeroej/Javascript-Algorithms/blob/main/programmers/level1/%EC%A7%81%EC%82%AC%EA%B0%81%ED%98%95%EB%B3%84%EC%B0%8D%EA%B8%B0.js)|
-|[x만큼 간격이 있는 n개의 숫자](https://programmers.co.kr/learn/courses/30/lessons/12954)|Javascript|
-|[행렬의 덧셈](https://programmers.co.kr/learn/courses/30/lessons/12950)|Javascript|
-|[핸드폰 번호 가리기](https://programmers.co.kr/learn/courses/30/lessons/12948)|Javascript|
-|[하샤드 수](https://programmers.co.kr/learn/courses/30/lessons/12947)|Javascript|
-|[평균 구하기](https://programmers.co.kr/learn/courses/30/lessons/12944)|Javascript|
-|[콜라츠 추측](https://programmers.co.kr/learn/courses/30/lessons/12943)|Javascript|
-|[최대공약수와 최소공배수](https://programmers.co.kr/learn/courses/30/lessons/12940)|Javascript|
+|[x만큼 간격이 있는 n개의 숫자](https://programmers.co.kr/learn/courses/30/lessons/12954)|[Javascript](https://github.com/aeroej/Javascript-Algorithms/blob/main/programmers/level1/x%EB%A7%8C%ED%81%BC%EA%B0%84%EA%B2%A9%EC%9D%B4%EC%9E%88%EB%8A%94n%EA%B0%9C%EC%9D%98%EC%88%AB%EC%9E%90.js)|
+|[행렬의 덧셈](https://programmers.co.kr/learn/courses/30/lessons/12950)|[Javascript](https://github.com/aeroej/Javascript-Algorithms/blob/main/programmers/level1/%ED%96%89%EB%A0%AC%EC%9D%98%EB%8D%A7%EC%85%88.js)|
+|[핸드폰 번호 가리기](https://programmers.co.kr/learn/courses/30/lessons/12948)|[Javascript](https://github.com/aeroej/Javascript-Algorithms/blob/main/programmers/level1/%ED%95%B8%EB%93%9C%ED%8F%B0%EB%B2%88%ED%98%B8%EA%B0%80%EB%A6%AC%EA%B8%B0.js)|
+|[하샤드 수](https://programmers.co.kr/learn/courses/30/lessons/12947)|[Javascript](https://github.com/aeroej/Javascript-Algorithms/blob/main/programmers/level1/%ED%95%98%EC%83%A4%EB%93%9C%EC%88%98.js)|
+|[평균 구하기](https://programmers.co.kr/learn/courses/30/lessons/12944)|[Javascript](https://github.com/aeroej/Javascript-Algorithms/blob/main/programmers/level1/%ED%8F%89%EA%B7%A0%EA%B5%AC%ED%95%98%EA%B8%B0.js)|
+|[콜라츠 추측](https://programmers.co.kr/learn/courses/30/lessons/12943)|[Javascript](https://github.com/aeroej/Javascript-Algorithms/blob/main/programmers/level1/%EC%BD%9C%EB%9D%BC%EC%B8%A0%EC%B6%94%EC%B8%A1.js)|
+|[최대공약수와 최소공배수](https://programmers.co.kr/learn/courses/30/lessons/12940)|[Javascript](https://github.com/aeroej/Javascript-Algorithms/blob/main/programmers/level1/%EC%B5%9C%EB%8C%80%EA%B3%B5%EC%95%BD%EC%88%98%EC%99%80%EC%B5%9C%EC%86%8C%EA%B3%B5%EB%B0%B0%EC%88%98.js)|
