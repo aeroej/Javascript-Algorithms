@@ -3,6 +3,8 @@
 arr.splice(제거할 인덱스, 제거할개수)
 str.split('')
 arr.indexOf()
+arr.slice
+arr.substring
 ...arr
 */
 
