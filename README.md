@@ -42,3 +42,4 @@
 |[자릿수 더하기](https://programmers.co.kr/learn/courses/30/lessons/12931)|[Javascript]()|
 |[이상한 문자 만들기](https://programmers.co.kr/learn/courses/30/lessons/12930)|[Javascript]()|
 |[약수의 합](https://programmers.co.kr/learn/courses/30/lessons/12928)|[Javascript]()|
+|[두 개 뽑아서 더하기](https://programmers.co.kr/learn/courses/30/lessons/68644)|[Javascript]()|
