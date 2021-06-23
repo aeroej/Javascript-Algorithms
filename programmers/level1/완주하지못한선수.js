@@ -1,10 +1,9 @@
 function solution(participant, completion) {
-  let s = new Set(completion);
-  
-  return participant.filter(p => {
-    if (!s.has(p)) return p;
-    else s.delete(p)
-  })[0]
+  participant = participant.sort()
+  completion = completion.sort()
+  for (let i = 0; i < participant.length; i++) {
+    if (participant[i] !== completion[i]) return participantc[i]
+  }
 }
 
-console.log(solution(["mislav", "stanko", "mislav", "ana"],	["stanko", "ana", "mislav"]))
+console.log(solution(["leo", "kiki", "eden"], ["eden", "kiki"]))
