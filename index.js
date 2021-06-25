@@ -1,6 +1,9 @@
-function solution() {
+/*
 
-  return "solution";
+*/
+
+function solution() {
+  return 'solution';
 }
 
 console.log(solution())
