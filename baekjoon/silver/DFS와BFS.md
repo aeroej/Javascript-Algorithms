@@ -1,7 +1,7 @@
-[![백준](../백준표지.jpg)](https://www.acmicpc.net/problem/1260)
 # [👩🏻‍💻문제링크](https://www.acmicpc.net/problem/1260)
 
 [백준 1260] DFS와 BFS (Javascript))
+[![백준](../백준표지.png)](https://www.acmicpc.net/problem/1260)
 
 
 <br>
